@@ -1,0 +1,132 @@
+[
+  {
+    "ContainingType": "BookStoreController",
+    "Method": "GetAuthorSales",
+    "RelativePath": "api/BookStore",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dbName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "connType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarSalesController",
+    "Method": "GetCarSalesReports",
+    "RelativePath": "api/CarSales",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dbName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "connType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChartsAPI.Controllers.FootballerController",
+    "Method": "GetFootballerListAsync",
+    "RelativePath": "api/Footballer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dbName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "connType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieStoreController",
+    "Method": "GetDirectorViews",
+    "RelativePath": "api/MovieStore",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dbName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "connType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChartsAPI.Controllers.ProductController",
+    "Method": "GetProductListAsync",
+    "RelativePath": "api/Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dbName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "connType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

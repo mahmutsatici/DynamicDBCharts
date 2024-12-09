@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|c:\\users\\st_fa\\desktop\\chartsapi\\chartsapi\\services\\connectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|solutionrelative:chartsapi\\services\\connectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|c:\\users\\st_fa\\desktop\\chartsapi\\chartsapi\\controllers\\carsalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|solutionrelative:chartsapi\\controllers\\carsalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|c:\\users\\st_fa\\desktop\\chartsapi\\chartsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|solutionrelative:chartsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|c:\\users\\st_fa\\desktop\\chartsapi\\chartsapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|solutionrelative:chartsapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|c:\\users\\st_fa\\desktop\\chartsapi\\chartsapi\\services\\footballerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25901713-F81E-4E9E-9EC9-0FEF383941E0}|ChartsAPI\\ChartsAPI.csproj|solutionrelative:chartsapi\\services\\footballerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarSalesController.cs",
+              "DocumentMoniker": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Controllers\\CarSalesController.cs",
+              "RelativeDocumentMoniker": "ChartsAPI\\Controllers\\CarSalesController.cs",
+              "ToolTip": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Controllers\\CarSalesController.cs",
+              "RelativeToolTip": "ChartsAPI\\Controllers\\CarSalesController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T18:52:16.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ChartsAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Program.cs",
+              "RelativeToolTip": "ChartsAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T12:01:37.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ChartsAPI\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Services\\ProductService.cs",
+              "RelativeToolTip": "ChartsAPI\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T12:01:32.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FootballerService.cs",
+              "DocumentMoniker": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Services\\FootballerService.cs",
+              "RelativeDocumentMoniker": "ChartsAPI\\Services\\FootballerService.cs",
+              "ToolTip": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Services\\FootballerService.cs",
+              "RelativeToolTip": "ChartsAPI\\Services\\FootballerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T12:01:29.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnectionService.cs",
+              "DocumentMoniker": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Services\\ConnectionService.cs",
+              "RelativeDocumentMoniker": "ChartsAPI\\Services\\ConnectionService.cs",
+              "ToolTip": "C:\\Users\\st_fa\\Desktop\\ChartsAPI\\ChartsAPI\\Services\\ConnectionService.cs",
+              "RelativeToolTip": "ChartsAPI\\Services\\ConnectionService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T12:00:45.101Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
