@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafik Görüntüleyici</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/chartsviewstyle.css" />
+</head>
+<body>
+    <header class="mb-4">
+        <h1 class="h1-primary">Grafik Görüntüleyici</h1>
+    </header>
+    <div class="content">
+        <div class="container mt-5">
+            
+            <main>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="chartType" class="label-class">Grafik Türü:</label>
+                            <select id="chartType" class="form-control">
+                                <option value="bar">Sütun Grafiği</option>
+                                <option value="doughnut">Donut Grafiği</option>
+                                <option value="radar">Radar Grafiği</option>
+                                <option value="pie">Pasta Grafiği</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="chart-container">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

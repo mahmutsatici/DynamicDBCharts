@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bağlantı Sayfası</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/connectpagestyle.css" />
+    <style>
+      /* Kayan mesaj için stil */
+      #notification {
+        display: none;
+        position: fixed;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #17a2b8;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        z-index: 1000;
+        transition: top 0.5s ease;
+      }
+
+      #notification.error {
+        background-color: #dc3545;
+      }
+
+      /* Yükleniyor mesajı */
+      #loadingMessage {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex justify-content-center mt-5">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card py-3 px-2">
+            <div class="row mx-auto">
+              <div class="col-4">
+                <i class="fas fa-database"></i>
+              </div>
+            </div>
+            <div class="division">
+              <div class="row">
+                <div class="col-3"><div class="line l"></div></div>
+                <div class="col-6">
+                  <span>Database Bağlantı Ekranı</span>
+                </div>
+                <div class="col-3"><div class="line r"></div></div>
+              </div>
+            </div>
+            <form class="myform" id="dbForm">
+              <div class="coolinput">
+                <label for="serverName" class="text">Server Name:</label>
+                <input
+                  type="text"
+                  id="serverName"
+                  value="SQLEXPRESS//EMRE"
+                  name="serverName"
+                  class="input"
+                />
+              </div>
+
+              <div class="coolinput">
+                <label for="databaseName" class="text">Database Name:</label>
+                <input
+                  type="text"
+                  id="databaseName"
+                  value="MovieStoreDB"
+                  name="databaseName"
+                  class="input"
+                />
+              </div>
+
+              <div class="coolinput">
+                <label for="sqlName" class="text">Prosedure or View Name:</label>
+                <input
+                  type="text"
+                  id="sqlName"
+                  value="MovieStore"
+                  name="sqlName"
+                  class="input"
+                />
+              </div>
+
+              <div>
+                <p class="text">Authenticaiton :</p>
+                <select class="form-select" id="authSelect">
+                  <option>Seçiniz</option>
+                  <option>True</option>
+                  <option>False</option>
+                </select>
+              </div>
+
+              <br />
+              <div class="coolinput">
+                <button type="button" class="btn btn-primary" id="connectBtn">
+                  Bağlan
+                </button>
+              </div>
+              <div id="loadingMessage">
+                <p>Bağlanılıyor, lütfen bekleyin...</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kayan bildirim -->
+    <div id="notification"></div>
+
+    <script>
+      document.getElementById("connectBtn").addEventListener("click", function () {
+        // Form verilerini alalım
+        const serverName = document.getElementById("serverName").value;
+        const databaseName = document.getElementById("databaseName").value;
+        const sqlName = document.getElementById("sqlName").value;
+        const authSelect = document.getElementById("authSelect").value;
+    
+        // Eğer "Seçiniz" seçiliyse bir uyarı göster
+        if (authSelect === "Seçiniz") {
+          showNotification("Lütfen doğrulama türünü seçiniz.", true);
+          return;
+        }
+    
+        // Yükleniyor mesajını göster ve butonu devre dışı bırak
+        document.getElementById("loadingMessage").style.display = "block";
+        document.getElementById("connectBtn").disabled = true;
+    
+        // İstek URL'ini oluşturalım
+        const apiUrl = `https://localhost:7157/api/${sqlName}?serverName=${serverName}&dbName=${databaseName}&connType=${authSelect}`;
+    
+        // Fetch API ile GET isteği gönderelim
+        fetch(apiUrl)
+          .then((response) => {
+            if (response.ok) {
+              // JSON verisini alalım
+              return response.json().then((data) => {
+                // JSON verisini sessionStorage'a kaydedelim
+                sessionStorage.setItem('jsonData', JSON.stringify(data));
+    
+                // Yanıt başarılı ise yönlendir
+                window.location.href = 'chartsview.html';
+              });
+            } else {
+              // Yanıt başarısız ise hata mesajı göster
+              return response.json().then((data) => {
+                showNotification(`Hata: ${data.message || 'Bir hata oluştu.'}`, true);
+              });
+            }
+          })
+          .catch((error) => {
+            // Hata durumunda ekrana mesaj gösterelim
+            showNotification(`Hata: ${error.message}`, true);
+          })
+          .finally(() => {
+            // Yükleniyor mesajını gizle ve butonu tekrar aktif hale getir
+            document.getElementById("loadingMessage").style.display = "none";
+            document.getElementById("connectBtn").disabled = false;
+          });
+      });
+    
+      // Bildirim mesajı gösterme fonksiyonu
+      function showNotification(message, isError) {
+        const notification = document.getElementById("notification");
+        notification.textContent = message;
+    
+        if (isError) {
+          notification.classList.add("error");
+        } else {
+          notification.classList.remove("error");
+        }
+    
+        notification.style.display = "block";
+        notification.style.top = "20px"; // Mesajın yukarıya çıkması
+    
+        // 3 saniye sonra kaybolması
+        setTimeout(() => {
+          notification.style.top = "-50px"; // Mesajın yukarı kayması
+          setTimeout(() => {
+            notification.style.display = "none";
+          }, 500); // Kaybolma animasyonu tamamlanınca gizle
+        }, 3000);
+      }
+    </script>
+    
+  </body>
+</html>
