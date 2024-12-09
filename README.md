@@ -5,6 +5,7 @@ DynamicDBCharts, kullanıcıların kendi veritabanı bilgilerini girerek tablo v
 ## Özellikler:
 
 -Kullanıcı tarafından sağlanan veritabanı bilgileriyle dinamik bağlantı kurma.
+
 -Veritabanından alınan verileri JSON formatında işleme.
 -Grafik türleri arasında seçim yapma (sütun, pasta, radar, vb.).
 -Hataları ve durum bilgilerini kullanıcıya bildirerek daha iyi bir deneyim sağlama.
