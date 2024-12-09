@@ -58,9 +58,13 @@ cd DynamicDBCharts
 -Kullanıcı aşağıdaki bilgileri girer:
 
 Server Adı: localhost
+
 Veritabanı Adı: SalesDB
+
 Tablo Adı: CarSales
+
 Doğrulama Türü: SQL Authentication
+
 "Bağlan" butonuna tıklandığında API, belirtilen tabloyu okur ve verileri döndürür.
 
 ## Lisans:
